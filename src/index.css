@@ -1,13 +1,152 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "@fontsource-variable/playfair";
+
+@font-face {
+  font-family: "Nominee-Black";
+  src: url("./font/Nominee/Nominee/Nominee-Black.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Nominee-BlackCondensed";
+  src: url("./font/Nominee/Nominee/Nominee-BlackCondensed.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-BlackCondensedItalic";
+  src: url("./font/Nominee/Nominee/Nominee-BlackCondensedItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-BlackExtended";
+  src: url("./font/Nominee/Nominee/Nominee-BlackExtended.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-BlackExtendedItalic";
+  src: url("./font/Nominee/Nominee/Nominee-BlackExtendedItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-BlackItalic";
+  src: url("./font/Nominee/Nominee/Nominee-BlackItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-Bold";
+  src: url("./font/Nominee/Nominee/Nominee-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-BoldCondensed";
+  src: url("./font/Nominee/Nominee/Nominee-BoldCondensed.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-BoldCondensedItalic";
+  src: url("./font/Nominee/Nominee/Nominee-BoldCondensedItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-BoldExtended";
+  src: url("./font/Nominee/Nominee/Nominee-BoldExtended.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-BoldExtendedItalic";
+  src: url("./font/Nominee/Nominee/Nominee-BoldExtendedItalic.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-Condensed";
+  src: url("./font/Nominee/Nominee/Nominee-Condensed.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-ExtBdCondIta";
+  src: url("./font/Nominee/Nominee/Nominee-ExtBdCondIta.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-ExtBdExtIta";
+  src: url("./font/Nominee/Nominee/Nominee-ExtBdExtIta.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-Extended";
+  src: url("./font/Nominee/Nominee/Nominee-Extended.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-ExtraBold";
+  src: url("./font/Nominee/Nominee/Nominee-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-ExtraBoldCondensed";
+  src: url("./font/Nominee/Nominee/Nominee-ExtraBoldCondensed.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-ExtraBoldExtended";
+  src: url("./font/Nominee/Nominee/Nominee-ExtraBoldExtended.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-ExtraLight";
+  src: url("./font/Nominee/Nominee/Nominee-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-ExtraLightCondensed";
+  src: url("./font/Nominee/Nominee/Nominee-ExtraLightCondensed.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-Thin";
+  src: url("./font/Nominee/Nominee/Nominee-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-Medium";
+  src: url("./font/Nominee/Nominee/Nominee-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-Medium1";
+  src: url("./font/Nominee/Nominee/Nominee-Medium1.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-MediumCondensed";
+  src: url("./font/Nominee/Nominee/Nominee-MediumCondensed.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Nominee-MediumExtended";
+  src: url("./font/Nominee/Nominee/Nominee-MediumExtended.ttf")
+    format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  /* font-family: "Playfair Variable", serif; */
+  font-family: "Nominee-Black", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

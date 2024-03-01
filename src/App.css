@@ -1,38 +1,388 @@
-.App {
-  text-align: center;
+.app {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-container {
+  height: 70vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.hero_container_box {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 100px;
+  transition: transform 0.5s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero_content_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+.hero_content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-direction: column;
+}
+.hero_content .hero_content_text {
+  font-size: 50px;
+  line-height: 60px;
+  color: #151621;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero_content .hero_content_buttons {
+  display: flex;
+  gap: 25px;
+}
+
+.hero_icon_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  z-index: 1;
+}
+
+.hero_icon_box .hero_icon {
+  width: 400px;
+}
+
+.video_block {
+  width: 100vw;
+  height: 120vh;
+  overflow: hidden;
+}
+
+.video_container {
+  width: 100%;
+  height: 100%;
+}
+.video_video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.block_spacer {
+  background-color: white;
+  height: 140px;
+  width: 100%;
+}
+.what_wedo {
+  min-height: 330px;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  gap: 30px;
+  box-sizing: border-box;
+}
+.what_wedo_box {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+.wedo_header {
+  width: 50%;
+  padding: 0 30px;
+}
+.wedo_header_text {
+  font-size: 40px;
+  color: #151621;
+}
+
+.wedo_content {
+  width: 50%;
+  padding: 0 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 25px;
+}
+.wedo_content_text {
+  font-size: 18px;
+  font-family: "Nominee-Medium", sans-serif;
+  color: #4c5661;
+}
+.helmes {
+  min-height: 92vh;
+  width: 100%;
+  background-color: #151621;
+  display: flex;
+}
+.helmes_box {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+  /* padding: 0 100px; */
+}
+.helmes_image {
+  width: 50%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  overflow: hidden;
+}
+.helmes_image .helmes_image_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateX(-20px);
+}
+.helmes_content {
+  width: 50%;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.helmes_content .helmes_content_header {
+  font-size: 38px;
+  font-weight: 800;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.helmes_content .helmes_content_text {
+  font-size: 18px;
+  font-family: "Nominee-Medium", sans-serif;
+  color: white;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.jobs {
+  background-color: #151621;
+  color: white;
+  min-height: 300px;
+  display: flex;
+}
+.jobs_box {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+}
+.jobs .jobs_project {
+  width: 50%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+  cursor: pointer;
+}
+.jobs_project .jobs_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.jobs_content .jobs_content_text {
+  font-size: 18px;
+  font-family: "Nominee-Medium", sans-serif;
+}
+.jobs_content .jobs_content_txt_bold {
+  font-size: 45px;
+  font-family: "Nominee-ExtraBold", sans-serif;
+}
+.jobs .jobs_line_breaks {
+  height: 100%;
+  width: 1px;
+  background-color: #d0d0d0;
+}
+
+.jobs_project .jobs_icon {
+  width: 0px;
+  height: 2px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.jobs_project:hover .jobs_icon {
+  width: 40px;
+}
+.news {
+  background-color: white;
+  margin: 150px 0;
+  display: flex;
+}
+.news_box {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+.news .news_header {
+  color: #151621;
+  font-size: 60px;
+  font-family: "Nominee-ExtraBold", sans-serif;
+}
+.news .news_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 1150px) {
+  .hero_container_box {
+    padding: 0 50px;
   }
-  to {
-    transform: rotate(360deg);
+  .what_wedo_box {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1050px) {
+  .hero_container_box {
+    padding: 0 50px;
+  }
+  .hero_content_box {
+    width: 100%;
+    align-items: center;
+  }
+  .hero_content .hero_content_text {
+    text-align: center;
+  }
+  .hero_content .hero_content_buttons {
+    justify-content: space-evenly;
+  }
+
+  .hero_icon_box {
+    display: none;
+  }
+  .what_wedo_box {
+    padding: 0 50px;
+  }
+  .block_spacer {
+    height: 40px;
+  }
+  .what_wedo {
+    padding-bottom: 40px;
+  }
+  .what_wedo_box {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .wedo_header {
+    width: 100%;
+    text-align: left;
+  }
+  .wedo_content {
+    width: 100%;
+    align-items: start;
+    padding: 0 30px;
+  }
+  .news {
+    margin: 50px 0;
+  }
+  .news_box {
+    padding: 0 20px;
+  }
+  .news .news_header {
+    padding-left: 30px;
+  }
+  .jobs_box {
+    flex-direction: column;
+  }
+  .jobs .jobs_project {
+    width: 100%;
+  }
+  .jobs .jobs_line_breaks {
+    height: 1px;
+    width: 100%;
+    background-color: #d0d0d0;
+  }
+  .jobs_content .jobs_content_txt_bold {
+    font-size: 35px;
+    font-family: "Nominee-ExtraBold", sans-serif;
+  }
+}
+
+@media (max-width: 900px) {
+  .helmes {
+    padding-bottom: 40px;
+  }
+  .helmes_box {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .helmes_image {
+    width: 100%;
+    height: 300px;
+  }
+  .helmes_content {
+    width: 100%;
+  }
+  .helmes_content .helmes_content_header {
+    font-size: 36px;
+    font-weight: 800;
+    color: white;
+  }
+}
+@media (max-width: 600px) {
+  .hero-container {
+    height: 50vh;
+    position: relative;
+    top: 0;
+    z-index: 0;
+  }
+  .hero_container_box {
+    padding: 0 20px;
+  }
+
+  .hero_word_break {
+    display: none;
+  }
+
+  .hero_content_box {
+    width: 100%;
+    align-items: center;
+  }
+
+  .hero_content .hero_content_text {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .hero_content .hero_content_buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video_block {
+    height: 350px;
+  }
+
+  .what_wedo_box {
+    padding: 0 20px;
+  }
+  .wedo_header {
+    padding: 0;
+  }
+  .wedo_header_text {
+    font-size: 36px;
+  }
+  .wedo_content {
+    padding: 0;
+  }
+  .helmes_content {
+    padding: 0 20px;
   }
 }
