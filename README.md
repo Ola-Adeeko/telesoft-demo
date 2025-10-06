@@ -1,6 +1,6 @@
-# Telesoftas Landing Page 
+# Telesoftas Landing Page (Copy)
 
-A simple and responsive landing page built with **React.js**, **TypeScript**, and **Css**.  
+A simple and responsive copy landing page built with **React.js**, **TypeScript**, and **Css**.  
 This project is designed to demonstrate modern frontend development practices with clean UI and strong typing.
 
 
