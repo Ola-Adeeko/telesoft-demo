@@ -24,7 +24,7 @@ const App = () => {
       }
     });
   }
-
+  // Test comment
   return (
     <div className="app">
       <NavBar />
